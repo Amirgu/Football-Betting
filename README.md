@@ -22,7 +22,7 @@ Two Betting Strategies were implemented the level stakes betting and the Kelly c
 
 We first initialize GAP parameters with (1,0.5,0.5) for making predictions on the 2021/2022 Season,then optimizing the GAP ratings parameters with minimazing the ignorance score(Log Loss) over the past season, and then making predictions for 2022/2023 Season. 
 
-
+The model yields 7% net return profit on the 2023 season and this without optimizing the parameters, and without using maximum odds.
 ### Future Extensions:
 
 Using the Bivariate Poisson Process for predicting Game results
