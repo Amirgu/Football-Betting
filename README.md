@@ -1,4 +1,4 @@
-# Football Betting project for Over/Under 2.5 Goals Market
+# Football Betting project for Over/Under 2.5 Goals Market, Game Results Prediction (In progress)
 
 Implementation of the following paper :A profitable model for predicting the over/under market in football , Edward Wheatcroft
 
