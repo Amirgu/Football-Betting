@@ -36,6 +36,8 @@ class FootballDataset:
             team_names[counter] = team
             counter += 1
         return team_names
+    
+    
 
     def average_over_under_2_5(self):
         """""
@@ -142,6 +144,21 @@ class FootballDataset:
         Releguated=Rank[17:]
 
         return Releguated
-
-        
     
+
+
+def team_nam(data):
+        """""
+        Fetching for team names in the dataset
+
+        """""
+        team_names = {}
+        counter = 1
+        unique_team_names = set()
+        for row in data:
+            unique_team_names.add(row['HomeTeam'])
+            unique_team_names.add(row['AwayTeam'])
+        for team in unique_team_names:
+            team_names[counter] = team
+            counter += 1
+        return team_names

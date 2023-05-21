@@ -1,5 +1,5 @@
 
-
+import numpy as np
 """"Author: Amine Rguig """""
 
 class Team:
@@ -14,7 +14,7 @@ class Team:
         self.num = num                  #### Team Number
         self.name=team_names[num]       #### Team name
         self.league= 'Premier League'   #### Team league
-    
+        
     
     def init(self):
         """""
@@ -51,7 +51,24 @@ class Team:
             return self.HA+self.HD
         else :
             return self.AA+self.AD
-    
+
+class Team_score:
+    def __init__(self,team_names,num,atc=0,defs=0):
+        self.alpha_vector=[atc]
+        self.beta_vector=[defs]
+        
+        self.name=team_names[num]
+        self.round=0
+    def update(self,alpha_i,beta_i):
+        self.alpha_vector.append(alpha_i)
+        self.beta_vector.append(beta_i)
+        self.round+=1
+    def get_last(self):
+        
+        return self.alpha_vector[self.round],self.beta_vector[self.round]
+       
+
+
 
 
 
